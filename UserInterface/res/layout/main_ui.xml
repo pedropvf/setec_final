@@ -1,0 +1,18 @@
+<setec.g3.ui.view.viewgroup.FlyOutContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false" >
+
+    <include layout="@layout/message_view_layout"/>
+    
+    <include layout="@layout/settings_view_layout"/>
+    
+    <include layout="@layout/pre_defined_message_view_layout"/>
+    
+    <include layout="@layout/line_of_fire_view_layout"/>
+
+    <include layout="@layout/combat_mode_layout"/>
+    
+    <include layout="@layout/primary_view_layout"/>
+
+</setec.g3.ui.view.viewgroup.FlyOutContainer>

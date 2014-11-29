@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android1:id="@+id/editText2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/login_user_tv"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/login_user_tv"
+        android1:ems="10"
+        android1:inputType="textPassword" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/editText4" >
+    </RadioGroup>
+
+    <EditText
+        android1:id="@+id/editText3"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/textView1"
+        android1:layout_alignRight="@+id/TextView01"
+        android1:layout_below="@+id/editText2"
+        android1:layout_marginTop="24dp"
+        android1:ems="10"
+        android1:inputType="number"
+        android1:text="Port" />
+
+    <EditText
+        android1:id="@+id/editText4"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBaseline="@+id/editText3"
+        android1:layout_alignBottom="@+id/editText3"
+        android1:layout_alignParentRight="true"
+        android1:ems="10"
+        android1:inputType="number"
+        android1:text="IP: xxx.xxx.xxx.xxx" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/editText2"
+        android1:layout_alignParentLeft="true"
+        android1:layout_marginLeft="18dp"
+        android1:text="Username" />
+
+    <TextView
+        android1:id="@+id/TextView01"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignBottom="@+id/editText2"
+        android1:layout_alignRight="@+id/textView1"
+        android1:text="Password" />
+
+    <EditText
+        android1:id="@+id/login_user_tv"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_below="@+id/splashscreen"
+        android1:layout_marginTop="28dp"
+        android1:ems="10" />
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/radioGroup1"
+        android1:layout_marginTop="42dp"
+        android1:layout_toRightOf="@+id/editText3"
+        android1:text="Login" />
+
+    <RadioButton
+        android1:id="@+id/radio1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/radio0"
+        android1:layout_alignTop="@+id/button1"
+        android1:layout_marginTop="31dp"
+        android1:text="Operational" />
+
+    <RadioButton
+        android1:id="@+id/radio0"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignTop="@+id/button1"
+        android1:layout_toRightOf="@+id/button1"
+        android1:checked="true"
+        android1:text="Commander" />
+
+</RelativeLayout>

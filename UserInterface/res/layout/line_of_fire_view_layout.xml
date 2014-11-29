@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_line_of_fire"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B07474" >
+		
+    	<ImageView
+    	    android:id="@+id/line_of_fire_pointer"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="match_parent"
+    	    android:layout_above="@+id/digits_description"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="10dp"
+    	    android:clickable="false"
+    	    android:focusable="false"
+    	    android:layout_gravity="center_horizontal"
+    	    android:src="@drawable/line_of_fire_pointer"/>
+    
+    	<TextView
+    	    android:id="@+id/digits_description"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_above="@+id/digits_selector"
+    	    android:layout_centerHorizontal="true"
+    	    android:layout_marginBottom="20dp"
+    	    android:clickable="false"
+    	    android:focusable="false"
+    	    android:gravity="center_vertical|center_horizontal"
+    	    android:text="Please point at fire line and input distance."
+    	    android:textSize="20dp" />
+    	
+        <LinearLayout
+            android:id="@+id/digits_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal" >
+
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/thousands_up"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_up" />
+
+                <TextView
+                    android:id="@+id/thousands"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/distance_digit_background"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/thousands_down"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/hundreds_up"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_up" />
+
+                <TextView
+                    android:id="@+id/hundreds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/distance_digit_background"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/hundreds_down"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/dozens_up"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_up" />
+
+                <TextView
+                    android:id="@+id/dozens"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/distance_digit_background"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/dozens_down"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/units_up"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_up" />
+
+                <TextView
+                    android:id="@+id/units"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/distance_digit_background"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:text="0"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/units_down"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/selector_digit_down" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_send_distance"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_send_message" />
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

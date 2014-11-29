@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/view_primary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#888888">
+
+    <include layout="@layout/quick_screen_layout"/>
+        
+        <ImageView
+            android:id="@+id/action_dial_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+        <ImageView
+            android:id="@+id/action_dial_circle_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+        <ImageView
+            android:id="@+id/line_of_fire_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/action_dial_iv"
+            android:layout_marginBottom="150dp"
+            android:layout_centerVertical="true" />
+        
+        <ImageView
+            android:id="@+id/messages_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/action_dial_iv"
+            android:layout_marginLeft="150dp"
+            android:layout_centerHorizontal="true" />
+        
+        <ImageView
+            android:id="@+id/settings_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/action_dial_iv"
+            android:layout_marginTop="150dp"
+            android:layout_centerVertical="true" />
+        
+        <ImageView
+            android:id="@+id/pre_defined_messages_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toLeftOf="@+id/action_dial_iv"
+            android:layout_marginRight="150dp"
+            android:layout_centerHorizontal="true" />
+        
+        
+        
+        <Button
+            android:id="@+id/line_of_fire_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_line_of_fire" />
+        
+        <Button
+            android:id="@+id/message_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_message" />
+        
+        <Button
+            android:id="@+id/settings_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_settings" />
+            
+        <Button
+            android:id="@+id/pre_defined_message_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_pre_defined_message" />
+        
+         <Button
+            android:id="@+id/back_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_back" />
+         
+         <Button
+            android:id="@+id/priority_selector"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/selector_priority_normal" />
+        
+        <ImageView
+            android:id="@+id/compass_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+        
+        <ImageView
+            android:id="@+id/sos_slider_iv"
+            android:layout_width="500dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp" />
+        
+        <ImageView
+            android:id="@+id/sos_slider_handle_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:ems="10" />
+        
+        <ImageView
+            android:id="@+id/combat_mode_circle"
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+    </RelativeLayout>

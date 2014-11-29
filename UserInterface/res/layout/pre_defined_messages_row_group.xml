@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp" >
+
+    <CheckedTextView 
+	    android:id="@+id/pre_defined_message_group_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="?android:attr/listPreferredItemHeight"
+	    android:layout_marginLeft="8dp"
+	    android:layout_centerVertical="True"
+	    android:gravity="center_vertical"
+	    android:layout_alignParentLeft="True"
+	    android:paddingLeft="32dp"
+	    android:textSize="16sp"
+	    android:textAlignment="textEnd" />
+    
+    <Button
+            android:id="@+id/btn_send_pre_defined_message"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/message_text_box"
+            android:layout_alignParentRight="true"
+	    	android:layout_centerVertical="True"
+			android:background="@drawable/selector_send_message" />
+
+</RelativeLayout> 

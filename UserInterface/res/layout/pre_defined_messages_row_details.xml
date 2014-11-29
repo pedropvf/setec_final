@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:paddingRight="5dp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/pre_defined_message_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/hello_world"
+        android:textSize="14sp" >
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black" />
+
+</LinearLayout> 
